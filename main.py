@@ -18,10 +18,10 @@ parser = argparse.ArgumentParser(description='main')
 # 数据参数
 parser.add_argument('--make_datasets', type=bool, default=False)
 parser.add_argument('--remake', type=bool, default=True)
-parser.add_argument('--data_path', type=str, default='/mnt/8T_3/licx/Inputs/vesuvius-challenge/')
+parser.add_argument('--data_path', type=str, default='/kaggle/vesuvius-challenge/')
 parser.add_argument('--size', type=int, default=512)
 parser.add_argument('--stride', type=int, default=256)
-parser.add_argument('--datasets_path', type=str, default='/mnt/8T_3/licx/Inputs/data_ink/')
+parser.add_argument('--datasets_path', type=str, default='/kaggle/Inputs/data_ink/')
 parser.add_argument('--num_workers', type=int, default=0)
 # 模型参数
 parser.add_argument('--batch_size', type=int, default=8)
@@ -50,7 +50,7 @@ parser.add_argument('--val_epoch', type=int, default=1)
 parser.add_argument('--loss_th', type=float, default=0.6)
 parser.add_argument('--threshold', type=float, default=0.5)
 # 其他
-parser.add_argument('--save_path', type=str, default='/mnt/8T_3/licx/Outputs/InkDetection/')
+parser.add_argument('--save_path', type=str, default='/kaggle/Outputs/InkDetection/')
 parser.add_argument('--subfolder', type=str, default='unet+attn')
 args = parser.parse_args()
 
